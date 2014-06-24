@@ -23,7 +23,7 @@
   {% endif %}
 
   {# CSS #}
-  <link href='static/css/google-fonts.css' rel='stylesheet' type='text/css'>
+  <link href="{{ pathto('_static/css/google-fonts.css', 1) }}" rel='stylesheet' type='text/css'>
 
   {# OPENSEARCH #}
   {% if not embedded %}
@@ -71,7 +71,7 @@
   {%- block extrahead %} {% endblock %}
 
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
-  <script src="static/js/modernizr.min.js"></script>
+  <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
 
 </head>
 
